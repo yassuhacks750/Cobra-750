@@ -1,0 +1,53 @@
+{
+  "name": "Cobra",
+  "description": "Telegram Bot using Pyrogram",
+  "repository": "",
+  "env": {
+    "API_ID": {
+      "description": "",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "",
+      "required": true
+    },
+    "BOT_USERNAME": {
+      "description": "",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "",
+      "required": true
+    },
+    "SUDO_USERS": {
+      "description": "Comma-separated list of sudo users' IDs",
+      "required": false
+    },
+    "CHANNEL_ID": {
+      "description": "-100",
+      "required": true
+    },
+    "MONGO_URL": {
+      "description": "",
+      "required": true
+    },
+    "PREMIUM_LOGS": {
+      "description": "-100",
+      "required": true
+    }
+  },
+  "stack": "heroku-22",
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ]
+}
